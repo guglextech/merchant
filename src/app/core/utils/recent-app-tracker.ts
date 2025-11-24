@@ -6,7 +6,7 @@ export interface TrackedApp {
   gameImage: string;
   gameShortcode: string;
   forecastCreated: boolean;
-  timestamp: string; // ISO date
+  timestamp: string; 
 }
 
 const STORAGE_KEY = "recentApps";

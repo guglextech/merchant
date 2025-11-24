@@ -15,34 +15,20 @@
 .hero {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 1.5rem;
-  padding: clamp(1.75rem, 3vw, 3rem);
+  padding: clamp(1.75rem, 3vw, 1rem);
   margin-bottom: 2rem;
   border-radius: 20px;
   background: #ffffff;
   border: 1px solid #e4e7ec;
 }
 
-.hero__eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: #6b7280;
-  margin-bottom: 0.5rem;
-}
-
 .hero__title {
-  margin: 0 0 0.5rem;
+  margin: 0;
   font-size: clamp(2rem, 4vw, 2.75rem);
   font-weight: 700;
   color: #0f172a;
-}
-
-.hero__subtitle {
-  margin: 0;
-  color: #4b5563;
-  max-width: 32rem;
 }
 
 .ghost-btn {
@@ -291,6 +277,7 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
+    align-items: flex-start;
   }
 
   .ghost-btn {
