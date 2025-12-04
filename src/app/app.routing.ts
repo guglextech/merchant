@@ -20,7 +20,7 @@ export const appRoutes: Routes = [
   },
   {
     path: "sports-lord",
-    loadChildren: () => import("./features/bet-lord/big-money.routing").then((m) => m.BetLordInRoutes),
+    loadChildren: () => import("./features/sports-lord/big-money.routing").then((m) => m.BetLordInRoutes),
   },
   {
     path: "love-relationships-lord",
@@ -28,7 +28,7 @@ export const appRoutes: Routes = [
   },
   {
     path: "jobs-lord",
-    loadChildren: () => import("./features/jobs-lord/jobs-lord.routing").then((m) => m.JobsLordRoutes),
+    loadChildren: () => import("./features/jobs-alerts/jobs-lord.routing").then((m) => m.JobsLordRoutes),
   },
   {
     path: "finance-lord",
