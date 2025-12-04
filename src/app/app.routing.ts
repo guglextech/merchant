@@ -19,7 +19,7 @@ export const appRoutes: Routes = [
     component: GamesBoardComponent
   },
   {
-    path: "bet-lord",
+    path: "sports-lord",
     loadChildren: () => import("./features/bet-lord/big-money.routing").then((m) => m.BetLordInRoutes),
   },
   {
