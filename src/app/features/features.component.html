@@ -25,7 +25,7 @@
           <div class="categories">
             @for (category of productCategories; track category.title) {
               <div class="category-group">
-                <h3 class="category-title">{{ category.title }}</h3>
+                <h3 class="category-title">{{ category.title | titlecase }}</h3>
                 <div class="game-grid">
                   @for (game of category.products; track game.gameId) {
                     <article class="game-card" (click)="setMatch(game)">
