@@ -20,23 +20,63 @@ export const appRoutes: Routes = [
     component: GamesBoardComponent
   },
   {
-    path: "sports-lord",
-    loadChildren: () => import("./features/sports-lord/big-money.routing").then((m) => m.BetLordInRoutes),
+    path: "king-solomon",
+    loadChildren: () => import("./features/king-solomon/big-money.routing").then((m) => m.BetLordInRoutes),
   },
   {
-    path: "love-relationships-lord",
+    path: "odds-oracle",
+    loadChildren: () => import("./features/odds-oracle/odds-oracle.routing").then((m) => m.OddsOracleRoutes),
+  },
+  {
+    path: "sportaga",
+    loadChildren: () => import("./features/sportaga/sportaga.routing").then((m) => m.SportagaRoutes),
+  },
+  {
+    path: "husky-odds",
+    loadChildren: () => import("./features/husky-odds/husky-odds.routing").then((m) => m.HuskyOddsRoutes),
+  },
+  {
+    path: "bet-lord",
+    loadChildren: () => import("./features/bet-lord/bet-lord.routing").then((m) => m.BetLordRoutes),
+  },
+  {
+    path: "flashscore",
+    loadChildren: () => import("./features/flashscore/flashscore.routing").then((m) => m.FlashscoreRoutes),
+  },
+  {
+    path: "topmatches",
+    loadChildren: () => import("./features/topmatches/topmatches.routing").then((m) => m.TopmatchesRoutes),
+  },
+  {
+    path: "businesskey",
+    loadChildren: () => import("./features/businesskey/businesskey.routing").then((m) => m.BusinesskeyRoutes),
+  },
+  {
+    path: "heartwise",
+    loadChildren: () => import("./features/heartwise/heartwise.routing").then((m) => m.HeartwiseRoutes),
+  },
+  {
+    path: "jobsalert",
+    loadChildren: () => import("./features/jobsalert/jobsalert.routing").then((m) => m.JobsalertRoutes),
+  },
+  {
+    path: "scholarship",
+    loadChildren: () => import("./features/scholarship/scholarship.routing").then((m) => m.ScholarshipRoutes),
+  },
+  {
+    path: "lovetips",
     loadChildren: () => import("./features/love-relationships-lord/love-relationships-lord.routing").then((m) => m.LoveRelationshipsLordRoutes),
   },
   {
-    path: "jobs-lord",
+    path: "jobconnect",
     loadChildren: () => import("./features/jobs-alerts/jobs-lord.routing").then((m) => m.JobsLordRoutes),
   },
   {
-    path: "finance-lord",
+    path: "financepro",
     loadChildren: () => import("./features/finance-lord/finance-lord.routing").then((m) => m.FinanceLordRoutes),
   },
   {
-    path: "motivation-lord",
+    path: "cashflow",
     loadChildren: () => import("./features/motivation-lord/motivation-lord.routing").then((m) => m.MotivationLordRoutes),
   },
   {
